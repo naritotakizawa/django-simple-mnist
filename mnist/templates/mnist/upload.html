@@ -1,0 +1,8 @@
+{% extends 'mnist/base.html' %}
+{% block content %}
+<form action="" method="POST" enctype='multipart/form-data'>
+  {{ form.file }}<hr>
+  {% csrf_token %}
+  <input type="submit" class="btn btn-outline-primary btn-lg" value="送信する">
+</form>
+{% endblock %}
